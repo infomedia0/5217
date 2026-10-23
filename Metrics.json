@@ -1,0 +1,50 @@
+{
+  "method": "Physical Swift source lines including comments and blank lines; executable assertion count, not coverage percentage. Catalog reads instrumented on the same Mac.",
+  "before": {
+    "version": "2.3.0",
+    "source_files": 8,
+    "source_lines": 1215,
+    "timer_model_lines": 315,
+    "largest_source_file_lines": 315,
+    "test_checks": 72,
+    "third_party_packages": 0,
+    "sound_choices_tested": 144,
+    "hardened_runtime": false,
+    "per_file_lines": {
+      "NotificationSounds.swift": 142,
+      "TimerView.swift": 236,
+      "TimerModel.swift": 315,
+      "Quotes.swift": 108,
+      "SoundSettingsView.swift": 90,
+      "TimerEngine.swift": 69,
+      "main.swift": 131,
+      "OnlineQuotes.swift": 124
+    },
+    "sound_localization_table_reads": 87
+  },
+  "after": {
+    "version": "2.3.1",
+    "source_files": 11,
+    "source_lines": 1435,
+    "timer_model_lines": 238,
+    "largest_source_file_lines": 238,
+    "test_checks": 99,
+    "third_party_packages": 0,
+    "sound_choices_tested": 144,
+    "hardened_runtime": true,
+    "per_file_lines": {
+      "LocalStorage.swift": 77,
+      "NotificationSounds.swift": 159,
+      "OnlineQuotes.swift": 119,
+      "QuoteHTTPClient.swift": 95,
+      "Quotes.swift": 108,
+      "SoundController.swift": 82,
+      "SoundSettingsView.swift": 91,
+      "TimerEngine.swift": 98,
+      "TimerModel.swift": 238,
+      "TimerView.swift": 237,
+      "main.swift": 131
+    },
+    "sound_localization_table_reads": 4
+  }
+}

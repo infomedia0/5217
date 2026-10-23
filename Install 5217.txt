@@ -1,0 +1,179 @@
+5217 — for Apple silicon Macs
+Version 2.4.7 · Requires macOS 13 Ventura or later
+
+INSTALL
+1. Open 5217-v2.4.7-Apple-Silicon.dmg.
+2. Drag 5217 into the Applications folder beside it.
+3. Open 5217 from Applications, then eject the disk image.
+4. Click Start focus. Allow notifications if macOS asks.
+
+This personal build is locally signed, but is not Apple-notarized.
+If macOS blocks it, go to System Settings > Privacy & Security and
+use Open Anyway for 5217 after attempting to open it.
+
+NEW IN V2.4.7
+Settings has a cleaner header, equal-width Sounds / Releases / About tabs,
+and one shared return-to-timer button. Version/build details are in About,
+which now ends with “Built by Arjun Sabharwal.”
+
+INCLUDED FROM V2.4.6
+Click the upward chevron in the quote card to hide quotes and shorten the window.
+Click Show quotes to expand them again. Quotes always open expanded on launch.
+The countdown continues while quotes are hidden. Settings and History retain
+full-size layouts inside the same window.
+
+INCLUDED FROM V2.4.5
+Settings > Sounds now offers notification sound limits of 1, 5, 10 or 15 seconds.
+The default is 5 seconds. Shorter tones finish naturally. The setting is saved
+with your chosen tone and also applies to previews. Changing it stops current audio.
+Settings > About has an expanded summary and five reading links.
+The footer explains how to quit from the menu bar or Dock.
+
+INCLUDED FROM V2.4.4
+Improved quote themes: motivational Focus quotes and calming Break quotes.
+Mixed or unclear online quotes are skipped. Each mode keeps a separate local
+collection and curated offline fallbacks. No new quote controls or API key needed.
+The footer is slightly lower, matching the approved preview.
+
+INCLUDED FROM V2.4.3
+Settings > About has a short 52/17 philosophy and a link to the source article.
+Stop is the square button after Skip. First click silences the app's sound and
+clears delivered 5217 banners. Second click opens a confirmation inside the app.
+Keep timer or Escape cancels. Yes, stop timer ends the current timer and returns
+to paused Focus at 52:00, retaining completed history. Unfinished focus is not counted.
+The timer keeps running until you confirm. Timer changes reset the two-click sequence.
+
+Timer-end tones are now played by 5217 so long sounds can be stopped immediately.
+System banners are silent. Use 5217's Sound control to mute timer-end audio;
+macOS notification sound preferences do not control app-owned playback.
+
+INCLUDED FROM V2.4.2
+The header status dot and messages have been removed.
+
+INCLUDED FROM V2.4.1
+Settings and History open inside the main window. Use Back or Escape to
+return to the timer. The countdown continues while you browse these pages.
+The History button is below Sound on/off at the bottom right.
+
+INCLUDED FROM V2.4
+Click the history icon beside TODAY's session count to open Focus history.
+Browse the Monday–Sunday weekly graph, daily totals, and all completed focus
+sessions. Totals use hours/minutes. Only completed 52-minute focus timers count.
+Breaks and skipped/unfinished focus timers are excluded.
+
+History is saved locally as monthly JSON files in:
+~/Library/Application Support/5217/FocusHistory/
+Available old focus records migrate automatically. Older versions only retained
+31 days; previously discarded records cannot be restored. New history is retained.
+
+INCLUDED FROM V2.3.4
+Test sound is now available in Settings > Sounds. The duplicate main-screen
+button has been removed.
+
+INCLUDED FROM V2.3.3
+Fixed the first-open Version history layout in Settings.
+
+INCLUDED FROM V2.3.2
+Open Settings to see the current version and build number. The Version history
+tab lists changes in each release.
+
+INCLUDED FROM V2.3.1
+Security and maintenance improvements. See the accompanying security audit
+for measured changes, validation, and remaining release limitations.
+
+INCLUDED FROM V2.3
+Click the gear icon at the top right, or press Command-comma, to open
+Settings. Search or browse the available Mac alert sounds, modern and
+classic alert tones, and ringtones. Select a sound to preview and save
+it. Use each row’s play button to preview without changing your choice.
+Stop preview ends a longer sound immediately.
+
+The selected sound is used for Focus and Break completion alerts and
+Test sound. It is remembered after quitting and reopening the app.
+Available sounds depend on your macOS version. Long tones play for up
+to 29 seconds. Your Mac’s system-wide sound preference is unchanged.
+
+INCLUDED FROM V2.2
+Fresh quotes are downloaded from ZenQuotes when the app opens, then
+cached locally and refreshed daily. No API key or account is needed.
+Use the download icon beside Next quote for a fresh batch. A one-minute
+minimum between requests avoids excessive API calls.
+Next quote continues to rotate locally and works offline.
+The 30 original quotes remain available as a fallback. Matching online
+quotes are added separately to Focus and Rest using keyword matching.
+ZenQuotes supplies the author attributions; original passages are not
+provided by its API. The app credits and links to ZenQuotes.
+
+INCLUDED FROM V2.1
+Open Settings > Sounds and click Test sound to preview the timer-end sound.
+The preview uses the same sound as Focus and Break completion alerts.
+It works even with Sound off and does not change that preference.
+
+INCLUDED FROM V2
+15 sourced quotes for Focus and 15 for Rest, available offline.
+A new quote appears every 60 seconds, even when the timer is paused.
+Click Next quote or press Command-N to change it immediately.
+Each mode has its own collection; all 15 appear before repeating.
+Click the author to read the original source in your browser.
+See Quotes.md for the complete list and source notes.
+
+UPGRADING
+Quit any running copy of 5217, then replace 5217 in Applications
+with this version. Your saved timer and session history are retained.
+
+YOUR RHYTHM
+Focus for 52 minutes, break for 17 minutes, and repeat automatically.
+The countdown shows minutes and seconds. A notification with sound
+marks each transition. If system notifications are unavailable, 5217
+shows its own small alert and plays a chime instead.
+
+Use Pause to stop the countdown; Resume continues where you left off.
+The circular-arrow button resets the current phase and pauses it.
+The skip button moves to the next phase without counting a completion.
+The sound control turns transition sounds on or off.
+Timer > Test Alert & Chime previews the built-in reminder.
+
+The menu bar shows the remaining time and includes the timer controls.
+Closing the window keeps the timer running. Choose Quit 5217 to stop
+the app; your timer pauses and is saved for your next launch.
+
+Space: Start / pause
+Command-P: Start / pause
+Command-R: Reset current timer
+Command-Right Arrow: Skip to the next phase
+Command-0: Show the window
+Command-Q: Quit and save
+
+NOTIFICATIONS & SLEEP
+Enable 5217 in System Settings > Notifications for system banners.
+macOS Focus settings and notification sound settings apply to system
+notifications. Your Mac's output volume applies to all chimes.
+5217 prevents idle system sleep while the timer runs, but lets your
+display sleep. Manually sleeping or closing your Mac's lid can prevent
+an alarm from sounding on time. On wake, the countdown catches up to
+the elapsed time; it does not replay old alarms.
+
+TODAY'S TOTAL
+Only full, completed 52-minute intervals count toward today's total.
+Paused time does not count. Elapsed intervals during manual sleep do
+count, since the timer follows wall-clock time. These are timer totals,
+not measurements of computer activity.
+
+PRIVACY
+No account, ads, or analytics. The app fetches quote batches over HTTPS
+from zenquotes.io. No timer history, session data, or personal details
+are sent. The service receives normal connection metadata, such as your
+IP address. Downloaded quotes are saved locally and work offline.
+Clicking a source link opens it in your browser. Timer state and a
+month of completed sessions are stored only on this Mac, in:
+~/Library/Application Support/5217/timer.json
+
+This is an independently built native Mac app inspired by the requested
+52/17 rhythm, and is not affiliated with the referenced Android app.
+
+SOUND STORAGE
+The selected-sound preference is saved in:
+~/Library/Application Support/5217/sound-settings.json
+Prepared notification sounds are stored locally in ~/Library/Sounds
+with a 5217- filename prefix. Apple audio is read from your Mac and is
+not distributed with this application.
