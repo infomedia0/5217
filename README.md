@@ -64,6 +64,11 @@ The release passed 164 automated checks. Physical validation was performed on
 macOS 27; earlier supported versions have not been tested on physical machines.
 Alerts cannot be guaranteed during manual sleep or while the Mac is powered off.
 
+## Releases
+
+v2.4.7 Avaiable for download : [https://github.com/infomedia0/5217/releases/tag/release](v2.4.7)
+
+
 ## Privacy and quote attribution
 
 Timer state and focus history remain in `~/Library/Application Support/5217/`.
